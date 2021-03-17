@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="20dp"
+android:background="#fff"
+tools:context=".MainActivity">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Escriba una frase:"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:layout_marginBottom="10dp"
+    android:textColor="@color/black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#AFEEEE"
+
+        >
+        <EditText
+            android:id="@+id/valor"
+            android:textSize="20dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:hint="Ingrese la frase"
+            android:background="#AFEEEE"
+            android:layout_marginBottom="30dp"
+            android:padding="15dp"/>
+
+    </ScrollView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radiointerna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Archivo Memoria INTERNA"
+            android:textStyle="bold"
+            />
+        <RadioButton android:id="@+id/radioexterna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:checked="true"
+            android:textStyle="bold"
+            android:text="Archivo Memoria EXTERNA"/>
+    </RadioGroup>
+
+
+
+
+
+<EditText
+    android:id="@+id/nombre"
+    android:textSize="20dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:hint="escriba Nombre del archivo"
+    android:layout_marginBottom="20dp"
+    android:background="#AFEEEE"
+    android:padding="15dp"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="guardar"
+        android:padding="20dp"
+        android:background="@drawable/redondo"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/guardar"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Abrir"
+        android:padding="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/redondo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/leer"/>
+</LinearLayout>
+
+
+
+</LinearLayout>
